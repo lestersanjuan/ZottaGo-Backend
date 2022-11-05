@@ -21,6 +21,7 @@ parent = os.path.dirname(current)
 sys.path.append(parent)
 from components.Bathrooms import Bathrooms
 from components.Floor import Floor
+from components.Review import Review
 from components.Base import base
 # add your model's MetaData object here
 # for 'autogenerate' support
