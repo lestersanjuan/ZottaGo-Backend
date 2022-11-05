@@ -7,7 +7,7 @@ services:
       - db
     environment:
       STAGE: test
-      SQLALCHEMY_DATABASE_URI: postgresql+psycopg2://waitlist:hi@db/waitlist
+      SQLALCHEMY_DATABASE_URI: postgresql+psycopg2://zottabase:toilet@db/zottabase
     networks:
       - default
     ports:
@@ -19,9 +19,9 @@ services:
 
   db:
     environment:
-      POSTGRES_USER: waitlist
-      POSTGRES_PASSWORD: hi
-      POSTGRES_DB: waitlist
+      POSTGRES_USER: zottabase
+      POSTGRES_PASSWORD: toilet
+      POSTGRES_DB: zottabase
     image: postgres:latest
     networks:
       - default

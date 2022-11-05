@@ -19,10 +19,10 @@ if config.config_file_name is not None:
 current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
-from components.Bathrooms import Bathrooms
-from components.Floor import Floor
-from components.Review import Review
-from components.Base import base
+from components.bathroom.Bathrooms import Bathrooms
+from components.floor.Floor import Floor
+from components.review.Review import Review
+from components.base import Base
 # add your model's MetaData object here
 # for 'autogenerate' support
 # from myapp import mymodel

@@ -1,6 +1,6 @@
 import uuid
 from app import db
-from Base import Base
+from ..base import Base
 from sqlalchemy.dialects.postgresql import UUID
 
 class Bathrooms(Base):
